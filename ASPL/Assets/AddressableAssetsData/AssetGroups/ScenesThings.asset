@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: ScenesThings
+  m_EditorClassIdentifier: 
+  m_GroupName: ScenesThings
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 5d5e1be8cc7bdda4f8937ac388ac0312
+  m_SerializeEntries:
+  - m_GUID: 128e8a1e6193a204f8a14c6a6581676b
+    m_Address: wing_grass
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 586cb9ebd109ee64e8c8772a1bf2afd2
+    m_Address: tree_eye
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6d1951ed0304a874380a98bc1341bd21
+    m_Address: eye
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f6d6e4f573d040349881382fc1f3c44a
+    m_Address: bird
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 3e630b0dfec19794987acea5ed94794d, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 48c3663f3f73c3448937c80f6e2a81af, type: 2}
+    - {fileID: 11400000, guid: 4d45181d4bd9169428ea25412603f6db, type: 2}
