@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - bossTaril
+  - FxTemporaire
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Player
+  - Enemy
+  - Ground
+  - 
+  - 
+  - SceneThings
+  - 
+  - BackGround
+  - 
+  - TriggerCo
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BackGround
+    uniqueID: 3950168237
+    locked: 0
+  - name: Ground
+    uniqueID: 1257721313
+    locked: 0
+  - name: SceneThings
+    uniqueID: 1697130921
+    locked: 0
+  - name: Character
+    uniqueID: 645192827
+    locked: 0
+  - name: effect
+    uniqueID: 493236889
+    locked: 0
+  - name: Items
+    uniqueID: 892079083
+    locked: 0
+  - name: UI
+    uniqueID: 2298898209
+    locked: 0
