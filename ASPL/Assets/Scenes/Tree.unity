@@ -2254,6 +2254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonGetUp: {fileID: 2141837787}
   buttonMove: {fileID: 1865880376}
+  canMove: 0
   yOffset: 2.2
   moveSpeed: 20
 --- !u!95 &993508647
@@ -5294,9 +5295,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2098640114}
   - component: {fileID: 2098640116}
-  - component: {fileID: 2098640117}
   - component: {fileID: 2098640118}
   - component: {fileID: 2098640119}
+  - component: {fileID: 2098640120}
   m_Layer: 6
   m_Name: Player-sleep
   m_TagString: Untagged
@@ -5343,54 +5344,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2098640117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098640113}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2e4f3b883db1444da2ec55c94ab0466, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isKnocked: 0
-  knockBackDuration: 0
-  knockBackDirection: {x: 0, y: 0}
-  groundCheck: {fileID: 245306535}
-  groundCheckDistance: 2.5
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 256
-  faceDir: {x: 0, y: 0}
-  attackDir: {x: 0, y: 0}
-  faceRight: 1
-  attackCheckRadius: 0
-  attackCheck: {fileID: 1863753129}
-  canBeHurt: 1
-  EntityFliped: 0
-  teleportPoint: {fileID: 0}
-  stateMachine: {fileID: 0}
-  moveSpeed: 0
-  dashDuration: 0
-  dashSpeed: 0
-  invincibilityTime: 0
-  hitForce: 0
-  isBusy: 0
-  canAttack: 1
-  enemyLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  deadBuffingTime: 0
-  teleport: {fileID: 0}
-  firePoint: {fileID: 0}
-  boomCrosshairPrefab: {fileID: 0}
-  trajectoryRendererPrefab: {fileID: 0}
-  boomProjectilePrefab: {fileID: 0}
-  explosionPrefab: {fileID: 0}
-  crosshairSpeed: 5
-  playerStats: {fileID: 0}
 --- !u!50 &2098640118
 Rigidbody2D:
   serializedVersion: 4
@@ -5463,6 +5416,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.6466353, y: 3.943984}
   m_EdgeRadius: 0
+--- !u!114 &2098640120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098640113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9cadfed1096b06478ee676d6a9371f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isKnocked: 0
+  knockBackDuration: 0
+  knockBackDirection: {x: 0, y: 0}
+  groundCheck: {fileID: 245306535}
+  groundCheckDistance: 2.5
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 256
+  faceDir: {x: 0, y: 0}
+  attackDir: {x: 0, y: 0}
+  faceRight: 1
+  attackCheckRadius: 0
+  attackCheck: {fileID: 1863753129}
+  canBeHurt: 1
+  EntityFliped: 0
 --- !u!1 &2126170453
 GameObject:
   m_ObjectHideFlags: 0
