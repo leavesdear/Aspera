@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JumpState2D : PlayerState
+public class JumpState2D : PlayerState2D
 {
-    public JumpState2D(PlayerStateMachine _stateMachine, Player _player, string _animBoolName) : base(_stateMachine, _player, _animBoolName)
+    public JumpState2D(PlayerStateMachine2D _stateMachine, Player2D _player, string _animBoolName) : base(_stateMachine, _player, _animBoolName)
     {
     }
 

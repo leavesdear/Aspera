@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IdleState2D : PlayerState2D
+public class SleepState : PlayerState2D
 {
-    public IdleState2D(PlayerStateMachine2D _stateMachine, Player2D _player, string _animBoolName) : base(_stateMachine, _player, _animBoolName)
+    public SleepState(PlayerStateMachine2D _stateMachine, Player2D _player, string _animBoolName) : base(_stateMachine, _player, _animBoolName)
     {
     }
 
@@ -21,9 +21,5 @@ public class IdleState2D : PlayerState2D
     public override void Update()
     {
         base.Update();
-        if (xInput != 0)
-        {
-            player.stateMachine.ChangeState(player.moveState);
-        }
     }
 }

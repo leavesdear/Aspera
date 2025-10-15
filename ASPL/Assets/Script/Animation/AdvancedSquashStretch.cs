@@ -10,7 +10,7 @@ public class AdvancedSquashStretch : MonoBehaviour
 
     private Vector3 originalScale;
     private float timer = 0f;
-    private bool isMoving = false;
+    public bool isMoving = false;
 
     void Start()
     {

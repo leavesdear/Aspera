@@ -1949,6 +1949,7 @@ GameObject:
   m_Component:
   - component: {fileID: 932758785}
   - component: {fileID: 932758786}
+  - component: {fileID: 932758787}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -2023,6 +2024,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &932758787
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932758784}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5de08736180a2a44aa877a4ada1d9507, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &991492810
 GameObject:
   m_ObjectHideFlags: 0
@@ -5318,8 +5340,8 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 245306535}
   - {fileID: 932758785}
+  - {fileID: 245306535}
   - {fileID: 1863753129}
   m_Father: {fileID: 868019473}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5443,6 +5465,8 @@ MonoBehaviour:
   attackCheck: {fileID: 1863753129}
   canBeHurt: 1
   EntityFliped: 0
+  stateMachine: {fileID: 0}
+  moveSpeed: 0
 --- !u!1 &2126170453
 GameObject:
   m_ObjectHideFlags: 0
