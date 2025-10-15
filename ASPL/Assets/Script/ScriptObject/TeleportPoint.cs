@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TeleportPoint : MonoBehaviour
 {
-    private Player player;
+    //public Player player;
 
     public GameSceneSO firstRoom;
 
@@ -16,8 +16,8 @@ public class TeleportPoint : MonoBehaviour
 
     void Start()
     {
-        player = PlayerManger.instance.player;
-        player.teleport = this;
+        //player = PlayerManger.instance.player;
+        // player.teleport = this;
     }
 
 
