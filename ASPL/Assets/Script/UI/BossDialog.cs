@@ -19,7 +19,7 @@ public class BossDialog : DialogueBox
         base.Start();
         player = PlayerManger.instance.player;
         //boss = EnemyManager.instance.boss;
-        npcName.text = "凯利斯";
+        //npcName.text = "凯利斯";
     }
 
     protected override void Update()

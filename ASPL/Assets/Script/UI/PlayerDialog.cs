@@ -14,7 +14,7 @@ public class PlayerDialog : DialogueBox
     protected override void Start()
     {
         base.Start();
-        npcName.text = "阿丝佩拉";
+        //npcName.text = "阿丝佩拉";
         StartDialog();
     }
 

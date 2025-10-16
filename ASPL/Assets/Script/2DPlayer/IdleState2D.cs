@@ -21,6 +21,12 @@ public class IdleState2D : PlayerState2D
     public override void Update()
     {
         base.Update();
+
+        if (player.IsGroundDetected() && Input.GetKeyDown(KeyCode.W))
+        {
+            player.stateMachine.ChangeState(player.jumpState);
+        }
+
         if (xInput != 0)
         {
             player.stateMachine.ChangeState(player.moveState);

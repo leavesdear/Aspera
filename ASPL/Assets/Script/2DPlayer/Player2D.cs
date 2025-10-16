@@ -10,13 +10,17 @@ public class Player2D : Entity
 {
     public PlayerStateMachine2D stateMachine;
 
-    public float moveSpeed;
+    private CapsuleCollider2D cd;
+
+    public float moveSpeed = 20f;
 
     public IdleState2D idleState { get; private set; }
     public MoveState2D moveState { get; private set; }
     public JumpState2D jumpState { get; private set; }
     public ShadowState2D shadowState { get; private set; }
     public SleepState sleepState { get; private set; }
+
+    public bool sleepAtStart = false;
 
     protected override void Awake()
     {
@@ -42,14 +46,22 @@ public class Player2D : Entity
     protected override void Start()
     {
         base.Start();
+        //if (!sleepAtStart)
+        //    stateMachine.ChangeState(idleState);
     }
 
     private void GetPlayerInput()
     {
-        if (GameManager.instance.isInputLocked)
+        if (GameManager.instance != null && GameManager.instance.isInputLocked)
         { return; }
+
+
     }
 
     public void AnimationTrigger() => stateMachine.currentState.AnimationFinishTrigger();
 
+    public override void Die()
+    {
+        base.Die();
+    }
 }

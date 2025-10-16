@@ -29,15 +29,22 @@ public class PlayerState2D
 
         rb = player.rb;
         triggerCalled = false;
+
         player.anim.SetBool(animBoolName, true);
     }
 
     public virtual void Update()
     {
-        if (!GameManager.instance.isInputLocked)
+
+        if (GameManager.instance != null && !GameManager.instance.isInputLocked)
+        { }//锁输入
+        yInput = Input.GetAxisRaw("Vertical");
+        xInput = Input.GetAxisRaw("Horizontal");
+
+
+        if (player.faceRight && xInput < 0 || player.faceRight && xInput > 0)
         {
-            yInput = Input.GetAxisRaw("Vertical");
-            xInput = Input.GetAxisRaw("Horizontal");
+            player.Flip();
         }
 
         stateTimer -= Time.deltaTime;

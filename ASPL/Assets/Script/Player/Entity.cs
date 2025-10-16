@@ -47,10 +47,10 @@ public class Entity : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
-        fx = GetComponent<EntityFX>();
+        //fx = GetComponent<EntityFX>();
         sr = GetComponentInChildren<SpriteRenderer>();
-        cs = GetComponent<CharacterStats>();
-        cd = GetComponent<CapsuleCollider2D>();
+        //cs = GetComponent<CharacterStats>();
+        //cd = GetComponent<CapsuleCollider2D>();
     }
 
     protected virtual void Start()
@@ -64,14 +64,14 @@ public class Entity : MonoBehaviour
     {
         //AttackCheckPositionOffset();
 
-        if (IsGroundDetected())
-        {
-            lastPosition = transform.position;
-        }
-        else
-        {
-            transform.position = new Vector3(lastPosition.x, lastPosition.y, 0);
-        }
+        //if (IsGroundDetected())
+        //{
+        //    lastPosition = transform.position;
+        //}
+        //else
+        //{
+        //    transform.position = new Vector3(lastPosition.x, lastPosition.y, 0);
+        //}//空气墙
     }
 
 

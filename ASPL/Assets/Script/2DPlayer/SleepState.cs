@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 
 public class SleepState : PlayerState2D
@@ -21,5 +22,9 @@ public class SleepState : PlayerState2D
     public override void Update()
     {
         base.Update();
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            stateMachine.ChangeState(player.idleState);
+        }
     }
 }
